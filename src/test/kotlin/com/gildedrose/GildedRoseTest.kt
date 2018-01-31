@@ -1,6 +1,5 @@
 package com.gildedrose
 
-import org.junit.Assert.*
 import org.junit.Test
 import kotlin.test.assertEquals
 
