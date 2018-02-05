@@ -1,3 +1,11 @@
 package com.gildedrose
 
-data class Item(var name: String, var sellIn: Int, var quality: Int)
+class Item(name: String, sellIn: Int, quality: Int) : AbstractItem(name, sellIn, quality) {
+    override fun updateQuality() {
+        decreaseQuality()
+        decreaseSellin()
+        if (sellIn < 0) {
+            decreaseQuality()
+        }
+    }
+}
